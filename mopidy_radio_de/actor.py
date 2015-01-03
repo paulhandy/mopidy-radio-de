@@ -25,7 +25,7 @@ def format_proxy(scheme, username, password, hostname, port):
         else:
             return "%s://%s:%i" % (scheme, hostname, port)
     else:
-        return None
+        return ""
 
 
 class RadioDeBackend(pykka.ThreadingActor, backend.Backend):
